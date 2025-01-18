@@ -2,7 +2,7 @@ def on_button_pressed_a():
     basic.show_string(morse.encode("Hi world"))
 input.on_button_pressed(Button.A, on_button_pressed_a)
 
-pins.set_audio_pin_enabled(False)
+pins.set_audio_pin_enabled(True)
 
 def on_every_interval():
     if led.point(4, 4):
